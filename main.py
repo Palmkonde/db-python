@@ -21,8 +21,10 @@ Games
     - OS
 """
 # Create
-con.execute("CREATE TABLE mobile_phone (id INTEGER PRIMARY KEY, model TEXT, country TEXT, OS TEXT)")
-con.execute("CREATE TABLE mobile_game (id INTEGER PRIMARY KEY, name TEXT, publish_year SMALLINT, downloaded INT, OS TEXT)")
+# con.execute("CREATE TABLE mobile_phone (id INTEGER PRIMARY KEY, model TEXT, country TEXT, OS TEXT)")
+# con.execute("CREATE TABLE mobile_game (id INTEGER PRIMARY KEY, name TEXT, publish_year SMALLINT, downloaded INT, OS TEXT)")
+
+
 
 
 
