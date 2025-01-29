@@ -38,3 +38,5 @@ con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES
 con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('PUBG Mobile', 2018, 100000000, 'Android')")
 con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Clash of Clans', 2012, 50000000, 'iOS')")
 con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Subway Surfers', 2012, 100000000, 'Android')")
+
+con.commit()
