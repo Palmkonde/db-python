@@ -26,17 +26,27 @@ Games
 
 # Insert
 # to mobile_phone
-con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('IPhone 14', 'USA', 'IOS')")
-con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('Samsung Galaxy S22', 'South Korea', 'Android')")
-con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('Google Pixel 7', 'USA', 'Android')")
-con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('Xiaomi 12', 'China', 'Android')")
-con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('OnePlus 10 Pro', 'China', 'Android')")
+# con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('IPhone 14', 'USA', 'IOS')")
+# con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('Samsung Galaxy S22', 'South Korea', 'Android')")
+# con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('Google Pixel 7', 'USA', 'Android')")
+# con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('Xiaomi 12', 'China', 'Android')")
+# con.execute("INSERT INTO mobile_phone (model, country, OS) VALUES ('OnePlus 10 Pro', 'China', 'Android')")
 
-# to mobile_game
-con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Angry Birds', 2009, 5000000, 'iOS')")
-con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Candy Crush Saga', 2012, 10000000, 'Android')")
-con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('PUBG Mobile', 2018, 100000000, 'Android')")
-con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Clash of Clans', 2012, 50000000, 'iOS')")
-con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Subway Surfers', 2012, 100000000, 'Android')")
+# # to mobile_game
+# con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Angry Birds', 2009, 5000000, 'iOS')")
+# con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Candy Crush Saga', 2012, 10000000, 'Android')")
+# con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('PUBG Mobile', 2018, 100000000, 'Android')")
+# con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Clash of Clans', 2012, 50000000, 'iOS')")
+# con.execute("INSERT INTO mobile_game (name, publish_year, downloaded, OS) VALUES ('Subway Surfers', 2012, 100000000, 'Android')")
+
+cursor = con.execute("SELECT model FROM mobile_phone")
+print("Model:")
+for row in cursor:
+    print(row)
+    
+cursor = con.execute("SELECT name, downloaded FROM mobile_game")
+print("Game:")
+for row in cursor:
+    print(row)
 
 con.commit()
